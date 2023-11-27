@@ -1,12 +1,12 @@
 public class Thuoc{
     private String maThuoc, tenThuoc;
     private int soLuong;
-    private double donGia;
+    private int donGia;
 
     public thuoc() {
     }
 
-    public thuoc(String maThuoc, String tenThuoc, int soLuong, double donGia) {
+    public thuoc(String maThuoc, String tenThuoc, int soLuong, int donGia) {
         this.maThuoc = maThuoc;
         this.tenThuoc = tenThuoc;
         this.soLuong = soLuong;
@@ -25,7 +25,7 @@ public class Thuoc{
         return soLuong;
     }
 
-    public double getDonGia() {
+    public int getDonGia() {
         return donGia;
     }
 
@@ -41,7 +41,7 @@ public class Thuoc{
         this.soLuong = soLuong;
     }
 
-    public void setDonGia(double donGia) {
+    public void setDonGia(int donGia) {
         this.donGia = donGia;
     }
 }
