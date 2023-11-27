@@ -6,93 +6,68 @@ import java.sql.SQLException;
 import java.util.Date;
 
 public class PhieuKhamChiTiet {
-    private String maPhieuKhamChiTiet,maBenhNhan, maBacSi, chiSoSucKhoe, ketLuan, yeuCau, maPhieuKham, tenBacSi;
+    private String maPhieuKham,maBenhNhan, maNhanVien, ketLuan, KhuyenNghi;
     private Date ngayKham;  
     
     public PhieuKhamChiTiet() {
     }
-    
-    public PhieuKhamChiTiet(String maPhieuKhamChiTiet, String maBenhNhan, String maBacSi, Date ngayKham, String chiSoSucKhoe, String ketLuan, String yeuCau, String maPhieuKham) {
-        this.maPhieuKhamChiTiet = maPhieuKhamChiTiet;
-        this.maBenhNhan = maBenhNhan;
-        this.maBacSi = maBacSi;
-        this.ngayKham = ngayKham;
-        this.chiSoSucKhoe = chiSoSucKhoe;
-        this.ketLuan = ketLuan;
-        this.yeuCau = yeuCau;
+
+    public PhieuKhamChiTiet(String maPhieuKham, String maBenhNhan, String maNhanVien, String ketLuan, String KhuyenNghi, Date ngayKham) {
         this.maPhieuKham = maPhieuKham;
-    }
-
-    public String getMaPhieuKhamChiTiet() {
-        return maPhieuKhamChiTiet;
-    }
-
-    public String getMaBenhNhan() {
-        return maBenhNhan;
-    }
-
-    public String getMaBacSi() {
-        return maBacSi;
-    }
-
-    public String getChiSoSucKhoe() {
-        return chiSoSucKhoe;
-    }
-
-    public String getKetLuan() {
-        return ketLuan;
-    }
-
-    public String getYeuCau() {
-        return yeuCau;
+        this.maBenhNhan = maBenhNhan;
+        this.maNhanVien = maNhanVien;
+        this.ketLuan = ketLuan;
+        this.KhuyenNghi = KhuyenNghi;
+        this.ngayKham = ngayKham;
     }
 
     public String getMaPhieuKham() {
         return maPhieuKham;
     }
 
-    public String getTenBacSi() {
-        return tenBacSi;
+    public void setMaPhieuKham(String maPhieuKham) {
+        this.maPhieuKham = maPhieuKham;
     }
 
-    public Date getNgayKham() {
-        return ngayKham;
-    }
-
-    public void setMaPhieuKhamChiTiet(String maPhieuKhamChiTiet) {
-        this.maPhieuKhamChiTiet = maPhieuKhamChiTiet;
+    public String getMaBenhNhan() {
+        return maBenhNhan;
     }
 
     public void setMaBenhNhan(String maBenhNhan) {
         this.maBenhNhan = maBenhNhan;
     }
 
-    public void setMaBacSi(String maBacSi) {
-        this.maBacSi = maBacSi;
+    public String getMaNhanVien() {
+        return maNhanVien;
     }
 
-    public void setChiSoSucKhoe(String chiSoSucKhoe) {
-        this.chiSoSucKhoe = chiSoSucKhoe;
+    public void setMaNhanVien(String maNhanVien) {
+        this.maNhanVien = maNhanVien;
+    }
+
+    public String getKetLuan() {
+        return ketLuan;
     }
 
     public void setKetLuan(String ketLuan) {
         this.ketLuan = ketLuan;
     }
 
-    public void setYeuCau(String yeuCau) {
-        this.yeuCau = yeuCau;
+    public String getKhuyenNghi() {
+        return KhuyenNghi;
     }
 
-    public void setMaPhieuKham(String maPhieuKham) {
-        this.maPhieuKham = maPhieuKham;
+    public void setKhuyenNghi(String KhuyenNghi) {
+        this.KhuyenNghi = KhuyenNghi;
     }
 
-    public void setTenBacSi(String tenBacSi) {
-        this.tenBacSi = tenBacSi;
+    public Date getNgayKham() {
+        return ngayKham;
     }
 
     public void setNgayKham(Date ngayKham) {
         this.ngayKham = ngayKham;
     }
+    
     
 }
