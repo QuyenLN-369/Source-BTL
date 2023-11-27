@@ -17,7 +17,7 @@ CREATE TABLE `donthuoc` (
   `tenThuoc` varchar(50) NOT NULL,
   `soLuong` int(11) NOT NULL,
   `ngayLayThuoc` date NOT NULL,
-  `tongTien` double NOT NULL
+  `tongTien` int NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
@@ -107,7 +107,7 @@ CREATE TABLE `thuoc` (
   `maThuoc` varchar(6) NOT NULL COMMENT 'VD: MT0001',
   `tenThuoc` varchar(50) NOT NULL,
   `soLuong` int(11) NOT NULL,
-  `donGia` double NOT NULL
+  `donGia` int NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
