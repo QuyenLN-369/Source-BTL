@@ -6,6 +6,22 @@ public class NhanVien {
     private String maNhanVien, hoTen,gioiTinh, chucVu,diaChi,soDienThoai, email, soCMND, password;
     private Date ngaySinh;
 
+    public NhanVien() {
+    }
+
+    public NhanVien(String maNhanVien, String hoTen, String gioiTinh, String chucVu, String diaChi, String soDienThoai, String email, String soCMND, String password, Date ngaySinh) {
+        this.maNhanVien = maNhanVien;
+        this.hoTen = hoTen;
+        this.gioiTinh = gioiTinh;
+        this.chucVu = chucVu;
+        this.diaChi = diaChi;
+        this.soDienThoai = soDienThoai;
+        this.email = email;
+        this.soCMND = soCMND;
+        this.password = password;
+        this.ngaySinh = ngaySinh;
+    }
+    
     public String getMaNhanVien() {
         return maNhanVien;
     }
