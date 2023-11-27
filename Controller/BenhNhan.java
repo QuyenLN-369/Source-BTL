@@ -8,24 +8,27 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class BenhNhan {
-    private String maBenhNhan, tenBenhNhan,gioiTinh, ngheNghiep, diaChi, tieuSuBenhAn, soDienThoai, SoCMND;
+    private String maBenhNhan, tenBenhNhan, maPhieuKham, gioiTinh, ngheNghiep, diaChi, TrieuChung, ghiChu, tieuSuBenhAn, soDienThoai, SoCMND;
     private Date ngaySinh;  
-    private Integer tinhTrangHonNhan;
+    private String tinhTrangHonNhan;
    
     public BenhNhan() {
     }   
-    
-    public BenhNhan(String maBenhNhan, String tenBenhNhan, String gioiTinh, Date ngaySinh, String ngheNghiep, Integer tinhTrangHonNhan, String diaChi, String tieuSuBenhAn, String soDienThoai, String SoCMND) {
+
+    public BenhNhan(String maBenhNhan, String tenBenhNhan, String maPhieuKham, String gioiTinh, String ngheNghiep, String diaChi, String TrieuChung, String ghiChu, String tieuSuBenhAn, String soDienThoai, String SoCMND, Date ngaySinh, String tinhTrangHonNhan) {
         this.maBenhNhan = maBenhNhan;
         this.tenBenhNhan = tenBenhNhan;
+        this.maPhieuKham = maPhieuKham;
         this.gioiTinh = gioiTinh;
-        this.ngaySinh = ngaySinh;
         this.ngheNghiep = ngheNghiep;
-        this.tinhTrangHonNhan = tinhTrangHonNhan;
         this.diaChi = diaChi;
+        this.TrieuChung = TrieuChung;
+        this.ghiChu = ghiChu;
         this.tieuSuBenhAn = tieuSuBenhAn;
         this.soDienThoai = soDienThoai;
         this.SoCMND = SoCMND;
+        this.ngaySinh = ngaySinh;
+        this.tinhTrangHonNhan = tinhTrangHonNhan;
     }
 
     public String getMaBenhNhan() {
@@ -34,6 +37,10 @@ public class BenhNhan {
 
     public String getTenBenhNhan() {
         return tenBenhNhan;
+    }
+
+    public String getMaPhieuKham() {
+        return maPhieuKham;
     }
 
     public String getGioiTinh() {
@@ -46,6 +53,14 @@ public class BenhNhan {
 
     public String getDiaChi() {
         return diaChi;
+    }
+
+    public String getTrieuChung() {
+        return TrieuChung;
+    }
+
+    public String getGhiChu() {
+        return ghiChu;
     }
 
     public String getTieuSuBenhAn() {
@@ -64,7 +79,7 @@ public class BenhNhan {
         return ngaySinh;
     }
 
-    public Integer getTinhTrangHonNhan() {
+    public String getTinhTrangHonNhan() {
         return tinhTrangHonNhan;
     }
 
@@ -74,6 +89,10 @@ public class BenhNhan {
 
     public void setTenBenhNhan(String tenBenhNhan) {
         this.tenBenhNhan = tenBenhNhan;
+    }
+
+    public void setMaPhieuKham(String maPhieuKham) {
+        this.maPhieuKham = maPhieuKham;
     }
 
     public void setGioiTinh(String gioiTinh) {
@@ -86,6 +105,14 @@ public class BenhNhan {
 
     public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
+    }
+
+    public void setTrieuChung(String TrieuChung) {
+        this.TrieuChung = TrieuChung;
+    }
+
+    public void setGhiChu(String ghiChu) {
+        this.ghiChu = ghiChu;
     }
 
     public void setTieuSuBenhAn(String tieuSuBenhAn) {
@@ -104,8 +131,7 @@ public class BenhNhan {
         this.ngaySinh = ngaySinh;
     }
 
-    public void setTinhTrangHonNhan(Integer tinhTrangHonNhan) {
+    public void setTinhTrangHonNhan(String tinhTrangHonNhan) {
         this.tinhTrangHonNhan = tinhTrangHonNhan;
     }
-    
 }
