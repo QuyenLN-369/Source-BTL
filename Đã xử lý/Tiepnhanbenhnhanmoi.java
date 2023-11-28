@@ -22,6 +22,7 @@ public class Tiepnhanbenhnhanmoi extends javax.swing.JFrame {
      */
     public Tiepnhanbenhnhanmoi() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         sql_connect = new SQL_connect();
     }
 
