@@ -13,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.*;
 import java.util.*;
+import javax.swing.JFrame;
 /**
  *
  * @author Admin
