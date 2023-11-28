@@ -23,6 +23,7 @@ public class CapThuoc extends javax.swing.JFrame {
      */
     public CapThuoc() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         sql_connect = new SQL_connect();
         model = (DefaultTableModel) jTable2.getModel();
     }
