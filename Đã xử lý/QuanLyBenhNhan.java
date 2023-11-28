@@ -27,6 +27,7 @@ public class QuanLyBenhNhan extends javax.swing.JFrame {
      */
     public QuanLyBenhNhan() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         sql_connect = new SQL_connect();
         model = (DefaultTableModel) jTable1.getModel();
     }
