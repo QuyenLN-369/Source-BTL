@@ -96,7 +96,11 @@ CREATE TABLE `benhnhan` (
 
 INSERT INTO `benhnhan` (`maBenhNhan`, `tenBenhNhan`, `gioiTinh`, `ngaySinh`, `ngheNghiep`, `tinhTrangHonNhan`, `diaChi`, `tieuSuBenhAn`, `soDienThoai`, `soCMND`) 
 VALUES
-('BN02', 'Le Van Bang', 'nam', '2003-11-16', 'sinh vien', 0, 'thanh hoa', 'khong', '01634480019', '168563678');
+('BN01', 'Le Đức Anh', 'nam', '2003-08-16', 'sinh viên', 0, 'Thanh Hóa', 'không', '01634480019', '8192739123'),
+('BN02', 'Trần Văn An', 'nam', '2003-11-15', 'công nhân', 0, 'Hà Nội', 'không', '01634861982', '786283232'),
+('BN03', 'Lê Yến Nhi', 'nữ', '2003-10-16', 'học sinh', 0, 'Nghệ An', 'không', '01657138119', '6981273912'),
+('BN04', 'Lê Văn Bằng', 'nam', '2003-09-06', 'lập trình viên', 0, 'Quảng Ninh', 'không', '01639287119', '812638120'),
+('BN05', 'Nguyễn Hữu Hiếu', 'nam', '2003-01-18', 'sinh viên', 0, 'Hải Phòng', 'không', '01687292219', '9172812301');
 
 -
 --
