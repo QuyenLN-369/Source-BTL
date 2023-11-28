@@ -17,7 +17,7 @@ CREATE TABLE `donthuoc` (
   `tenThuoc` varchar(50) NOT NULL,
   `soLuong` int(11) NOT NULL,
   `ngayLayThuoc` date NOT NULL,
-  `tongTien` int NOT NULL
+  `tongTien` double NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
@@ -57,24 +57,22 @@ CREATE TABLE `nhanvien` (
 
 --
 
---
 INSERT INTO `nhanvien` (`maNhanVien`, `hoTen`, `ngaySinh`, `gioiTinh`, `chucVu`, `diaChi`, `soDienThoai`, `email`, `soCMND`, `password`) VALUES
 ('NV001', 'Tran Anh Son', '2003-03-13', 'Nam', 'Nhân viên lễ tân', 'Nam Định', '0127877777', 'sonta97@gmail.com', '123456789', '123'),
 ('BS001', 'Le Ngoc Quyen', '2003-09-17', 'Nam', 'Bác sĩ đa khoa', 'Thanh Hóa', '0868999999', 'quyenln@gmail.com', '888888888', '123456'),
 ('BS002', 'Nguyen Minh Quan', '2003-09-28', 'Nam', 'Bác sĩ chuyên khoa', 'Thanh Hóa', '0797888888', 'quannm@gmail.com', '1239123129', '123456'),
-('BS003', 'Dang Minh Anh', '2003-10-10', 'Nam', 'Nhân viên xét nghiệm', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
+('BS003', 'Dang Minh Anh', '2003-10-10', 'Nam', 'Bác  sĩ chuyên khoa', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
 ('DS001', 'Lai The Hoa', '2003-12-12', 'Nam', 'Dược sĩ', 'Hà Nội', '0898456789', 'hoalt@gmail.com', '0294723842', '111111');
 
 -- --------------------------------------------------------
 
-
 CREATE TABLE `phieukhamchitiet` (
+  `maPhieuKham` varchar(6) NOT NULL,
   `maBenhNhan` varchar(6) NOT NULL,
   `maNhanVien` varchar(6) NOT NULL COMMENT 'mã của bác sĩ thực hiện',
   `ngayKham` date NOT NULL,
-  `ketLuan` varchar(200) NOT NULL,
-  `KhuyenNghi` varchar(200) DEFAULT NULL COMMENT 'yêu cầu bệnh nhân đi khám tiếp ai, phòng nào, hoặc bốc thuốc thì đơn thuốc ra làm sao sẽ ghi vào đây',
-  `maPhieuKham` varchar(6) NOT NULL
+  `KhuyenNghi` varchar(200) DEFAULT NULL,
+  `ketLuan` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -93,7 +91,7 @@ CREATE TABLE `benhnhan` (
   `TrieuChung` varchar(200) NOT NULL COMMENT 'Khi vào nhân viên lễ tân hỏi và ghi lại triệu chứng vào phần lí do khám',
   `ghiChu` varchar(200) DEFAULT NULL
  
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='VD mã bệnh nhân: BN0001\r\nGiới tính: 0-Nữ, 1 - Nam';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 --
 
 INSERT INTO `benhnhan` (`maBenhNhan`, `tenBenhNhan`, `gioiTinh`, `ngaySinh`, `ngheNghiep`, `tinhTrangHonNhan`, `diaChi`, `tieuSuBenhAn`, `soDienThoai`, `soCMND`) 
@@ -104,10 +102,10 @@ VALUES
 --
 
 CREATE TABLE `thuoc` (
-  `maThuoc` varchar(6) NOT NULL COMMENT 'VD: MT0001',
+  `maThuoc` varchar(6) NOT NULL,
   `tenThuoc` varchar(50) NOT NULL,
   `soLuong` int(11) NOT NULL,
-  `donGia` int NOT NULL
+  `donGia` double NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
