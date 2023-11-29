@@ -7,7 +7,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 use quanlyphongkham;
-------------------------------------------
+
 
 CREATE TABLE `donthuoc` (
   `maDonThuoc` int(6) NOT NULL,
@@ -20,16 +20,14 @@ CREATE TABLE `donthuoc` (
   `tongTien` double NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `donthuoc`
---
+
 
 INSERT INTO `donthuoc` (`maDonThuoc`, `maBenhNhan`, `maDuocSi`, `maBacSi`, `ngayLayThuoc`, `tongTien`) VALUES
-(2, 'aaa', '21', '24', '2023-02-02', 20),
-(3, 'bbb', '24', '21', '2023-02-02', 30);
-
--- --------------------------------------------------------
-
+(1, 'BN01', 'DS01', 'BS02', '2023-12-10', 20000),
+(2, 'BN02', 'DS01', 'BS01', '2023-02-11', 10000),
+(3, 'BN03', 'DS01', 'BS03', '2023-27-11', 40000),
+(4, 'BN04', 'DS01', 'BS03', '2023-28-11', 18000),
+(5, 'BN05', 'DS01', 'BS02', '2023-29-11', 30000);
 
 /* CREATE TABLE `donthuocchitiet` (
   `maDonThuocChiTiet` int(6) NOT NULL,
@@ -37,8 +35,6 @@ INSERT INTO `donthuoc` (`maDonThuoc`, `maBenhNhan`, `maDuocSi`, `maBacSi`, `ngay
   `maThuoc` varchar(6) NOT NULL,
   `soLuong` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8; */
-
--- --------------------------------------------------------
 
 
 
@@ -55,7 +51,6 @@ CREATE TABLE `nhanvien` (
   `password` varchar(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
 
 INSERT INTO `nhanvien` (`maNhanVien`, `hoTen`, `ngaySinh`, `gioiTinh`, `chucVu`, `diaChi`, `soDienThoai`, `email`, `soCMND`, `password`) VALUES
 ('NV001', 'Tran Anh Son', '2003-03-13', 'Nam', 'Nhân viên lễ tân', 'Nam Định', '0127877777', 'sonta97@gmail.com', '123456789', '123'),
@@ -64,7 +59,6 @@ INSERT INTO `nhanvien` (`maNhanVien`, `hoTen`, `ngaySinh`, `gioiTinh`, `chucVu`,
 ('BS003', 'Dang Minh Anh', '2003-10-10', 'Nam', 'Bác  sĩ chuyên khoa', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
 ('DS001', 'Lai The Hoa', '2003-12-12', 'Nam', 'Dược sĩ', 'Hà Nội', '0898456789', 'hoalt@gmail.com', '0294723842', '111111');
 
--- --------------------------------------------------------
 
 CREATE TABLE `phieukhamchitiet` (
   `maPhieuKham` varchar(6) NOT NULL,
@@ -75,7 +69,15 @@ CREATE TABLE `phieukhamchitiet` (
   `ketLuan` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
+INSERT INTO `phieukhamchitiet` (`maPhieuKham`, `maBenhNhan`, `maNhanVien`, `ngayKham`, `KhuyenNghi`, `ketLuan`)
+VALUES 
+('PK0001', 'BN01', 'BS01', '2023-12-10', 'Uống thuốc theo đúng liều lượng', 'Không có vấn đề đặc biệt'),
+('PK0002', 'BN02', 'BS02', '2023-02-11', 'Nghỉ ngơi đầy đủ', 'Dấu hiệu của mệt mỏi'),
+('PK0003', 'BN03', 'BS03', '2023-27-11', 'Tập thể dục đều đặn', 'Chưa có vấn đề gì đặc biệt'),
+('PK0004', 'BN04', 'BS02', '2023-28-11', 'Kiểm tra lại sau 2 tuần', 'Cần theo dõi tình trạng sức khỏe'),
+('PK0005', 'BN05', 'BS03', '2023-29-11', NULL, 'Không có vấn đề đặc biệt');
+
+
 CREATE TABLE `benhnhan` (
   `maBenhNhan` varchar(6) NOT NULL,
   `tenBenhNhan` varchar(30) NOT NULL,
@@ -92,7 +94,7 @@ CREATE TABLE `benhnhan` (
   `ghiChu` varchar(200) DEFAULT NULL
  
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
---
+
 
 INSERT INTO `benhnhan` (`maBenhNhan`, `tenBenhNhan`, `gioiTinh`, `ngaySinh`, `ngheNghiep`, `tinhTrangHonNhan`, `diaChi`, `tieuSuBenhAn`, `soDienThoai`, `soCMND`) 
 VALUES
@@ -102,8 +104,6 @@ VALUES
 ('BN04', 'Lê Văn Bằng', 'nam', '2003-09-06', 'lập trình viên', 0, 'Quảng Ninh', 'không', '01639287119', '812638120'),
 ('BN05', 'Nguyễn Hữu Hiếu', 'nam', '2003-01-18', 'sinh viên', 0, 'Hải Phòng', 'không', '01687292219', '9172812301');
 
--
---
 
 CREATE TABLE `thuoc` (
   `maThuoc` varchar(6) NOT NULL,
@@ -112,14 +112,13 @@ CREATE TABLE `thuoc` (
   `donGia` double NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
-
---
 
 INSERT INTO `thuoc` (`maThuoc`, `tenThuoc`, `soLuong`, `donGia`) VALUES
 ('PN1', 'panadon', 18, 5000),
 ('TX1', 'trixadon', 34, 7000),
+('PT1', 'pentadon', 34, 9000),
 ('QR1', 'quaradon', 12, 8000);
+
 
 --
 
