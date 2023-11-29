@@ -53,11 +53,11 @@ CREATE TABLE `nhanvien` (
 
 
 INSERT INTO `nhanvien` (`maNhanVien`, `hoTen`, `ngaySinh`, `gioiTinh`, `chucVu`, `diaChi`, `soDienThoai`, `email`, `soCMND`, `password`) VALUES
-('NV001', 'Tran Anh Son', '2003-03-13', 'Nam', 'Nhân viên lễ tân', 'Nam Định', '0127877777', 'sonta97@gmail.com', '123456789', '123'),
-('BS001', 'Le Ngoc Quyen', '2003-09-17', 'Nam', 'Bác sĩ đa khoa', 'Thanh Hóa', '0868999999', 'quyenln@gmail.com', '888888888', '123456'),
-('BS002', 'Nguyen Minh Quan', '2003-09-28', 'Nam', 'Bác sĩ chuyên khoa', 'Thanh Hóa', '0797888888', 'quannm@gmail.com', '1239123129', '123456'),
-('BS003', 'Dang Minh Anh', '2003-10-10', 'Nam', 'Bác  sĩ chuyên khoa', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
-('DS001', 'Lai The Hoa', '2003-12-12', 'Nam', 'Dược sĩ', 'Hà Nội', '0898456789', 'hoalt@gmail.com', '0294723842', '111111');
+('NV01', 'Tran Anh Son', '2003-03-13', 'Nam', 'Nhân viên lễ tân', 'Nam Định', '0127877777', 'sonta97@gmail.com', '123456789', '123'),
+('BS01', 'Le Ngoc Quyen', '2003-09-17', 'Nam', 'Bác sĩ đa khoa', 'Thanh Hóa', '0868999999', 'quyenln@gmail.com', '888888888', '123456'),
+('BS02', 'Nguyen Minh Quan', '2003-09-28', 'Nam', 'Bác sĩ chuyên khoa', 'Thanh Hóa', '0797888888', 'quannm@gmail.com', '1239123129', '123456'),
+('BS03', 'Dang Minh Anh', '2003-10-10', 'Nam', 'Bác  sĩ chuyên khoa', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
+('DS01', 'Lai The Hoa', '2003-12-12', 'Nam', 'Dược sĩ', 'Hà Nội', '0898456789', 'hoalt@gmail.com', '0294723842', '111111');
 
 
 CREATE TABLE `phieukhamchitiet` (
