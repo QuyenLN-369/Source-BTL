@@ -53,11 +53,11 @@ CREATE TABLE `nhanvien` (
 
 
 INSERT INTO `nhanvien` (`maNhanVien`, `hoTen`, `ngaySinh`, `gioiTinh`, `chucVu`, `diaChi`, `soDienThoai`, `email`, `soCMND`, `password`) VALUES
-('NV01', 'Tran Anh Son', '2003-03-13', 'Nam', 'Nhân viên lễ tân', 'Nam Định', '0127877777', 'sonta97@gmail.com', '123456789', '123'),
-('BS01', 'Le Ngoc Quyen', '2003-09-17', 'Nam', 'Bác sĩ đa khoa', 'Thanh Hóa', '0868999999', 'quyenln@gmail.com', '888888888', '123456'),
-('BS02', 'Nguyen Minh Quan', '2003-09-28', 'Nam', 'Bác sĩ chuyên khoa', 'Thanh Hóa', '0797888888', 'quannm@gmail.com', '1239123129', '123456'),
-('BS03', 'Dang Minh Anh', '2003-10-10', 'Nam', 'Bác  sĩ chuyên khoa', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
-('DS01', 'Lai The Hoa', '2003-12-12', 'Nam', 'Dược sĩ', 'Hà Nội', '0898456789', 'hoalt@gmail.com', '0294723842', '111111');
+('NV01', 'Trần Anh Sơn', '2003-03-13', 'Nam', 'Nhân viên lễ tân', 'Nam Định', '0127877777', 'sonta97@gmail.com', '123456789', '123'),
+('BS01', 'Lê Ngọc Quyền', '2003-09-17', 'Nam', 'Bác sĩ đa khoa', 'Thanh Hóa', '0868999999', 'quyenln@gmail.com', '888888888', '123456'),
+('BS02', 'Nguyễn Minh Quân', '2003-09-28', 'Nam', 'Bác sĩ chuyên khoa', 'Thanh Hóa', '0797888888', 'quannm@gmail.com', '1239123129', '123456'),
+('BS03', 'Đặng Minh Anh', '2003-10-10', 'Nam', 'Bác  sĩ chuyên khoa', 'Hà Nội', '0868555555', 'anhdm@gmail.com', '999999999', '123456'),
+('DS01', 'Lại Thế Hòa', '2003-12-12', 'Nam', 'Dược sĩ', 'Hà Nội', '0898456789', 'hoalt@gmail.com', '0294723842', '111111');
 
 
 CREATE TABLE `phieukhamchitiet` (
@@ -98,7 +98,7 @@ CREATE TABLE `benhnhan` (
 
 INSERT INTO `benhnhan` (`maBenhNhan`, `tenBenhNhan`, `gioiTinh`, `ngaySinh`, `ngheNghiep`, `tinhTrangHonNhan`, `diaChi`, `tieuSuBenhAn`, `soDienThoai`, `soCMND`) 
 VALUES
-('BN01', 'Le Đức Anh', 'nam', '2003-08-16', 'sinh viên', 0, 'Thanh Hóa', 'không', '01634480019', '8192739123'),
+('BN01', 'Lê Đức Anh', 'nam', '2003-08-16', 'sinh viên', 0, 'Thanh Hóa', 'không', '01634480019', '8192739123'),
 ('BN02', 'Trần Văn An', 'nam', '2003-11-15', 'công nhân', 0, 'Hà Nội', 'không', '01634861982', '786283232'),
 ('BN03', 'Lê Yến Nhi', 'nữ', '2003-10-16', 'học sinh', 0, 'Nghệ An', 'không', '01657138119', '6981273912'),
 ('BN04', 'Lê Văn Bằng', 'nam', '2003-09-06', 'lập trình viên', 0, 'Quảng Ninh', 'không', '01639287119', '812638120'),
@@ -116,7 +116,8 @@ CREATE TABLE `thuoc` (
 INSERT INTO `thuoc` (`maThuoc`, `tenThuoc`, `soLuong`, `donGia`) VALUES
 ('PN1', 'panadon', 18, 5000),
 ('TX1', 'trixadon', 34, 7000),
-('PT1', 'pentadon', 34, 9000),
+('PT1', 'pentadon', 20, 9000),
+('PT2', 'pentaphacon', 14, 10000),
 ('QR1', 'quaradon', 12, 8000);
 
 
