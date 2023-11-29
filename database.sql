@@ -96,13 +96,14 @@ CREATE TABLE `benhnhan` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `benhnhan` (`maBenhNhan`, `tenBenhNhan`, `gioiTinh`, `ngaySinh`, `ngheNghiep`, `tinhTrangHonNhan`, `diaChi`, `tieuSuBenhAn`, `soDienThoai`, `soCMND`) 
-VALUES
-('BN01', 'Lê Đức Anh', 'nam', '2003-08-16', 'sinh viên', 0, 'Thanh Hóa', 'không', '01634480019', '8192739123'),
-('BN02', 'Trần Văn An', 'nam', '2003-11-15', 'công nhân', 0, 'Hà Nội', 'không', '01634861982', '786283232'),
-('BN03', 'Lê Yến Nhi', 'nữ', '2003-10-16', 'học sinh', 0, 'Nghệ An', 'không', '01657138119', '6981273912'),
-('BN04', 'Lê Văn Bằng', 'nam', '2003-09-06', 'lập trình viên', 0, 'Quảng Ninh', 'không', '01639287119', '812638120'),
-('BN05', 'Nguyễn Hữu Hiếu', 'nam', '2003-01-18', 'sinh viên', 0, 'Hải Phòng', 'không', '01687292219', '9172812301');
+INSERT INTO `benhnhan` (`maBenhNhan`, `tenBenhNhan`, `maPhieuKham`, `gioiTinh`, `ngaySinh`, `ngheNghiep`, `tinhTrangHonNhan`, `diaChi`, `soDienThoai`, `soCMND`, `tieuSuBenhAn`, `TrieuChung`, `ghiChu`)
+VALUES 
+('BN01', 'Nguyễn Văn A', 'PK0001', 'Nam', '1990-01-15', 'Nhân viên văn phòng', 'Đã kết hôn', 'Hà Nội', '0123456789', '123456789', 'Không có', 'Sốt và đau đầu', 'không'),
+('BN02', 'Trần Thị B', 'PK0002', 'Nữ', '1985-05-20', 'Giáo viên', 'Đã ly hôn', 'Hồ Chí Minh', '0987654321', '987654321', 'Tiểu đường', 'Mệt mỏi và buồn nôn', 'không'),
+('BN03', 'Lê Văn C', 'PK0003', 'Nam', '1998-09-10', 'Sinh viên', 'Độc thân', 'Đà Nẵng', '0111222333', '111222333', 'Asthma', 'Khó thở và ho', 'Ghi chú 3'),
+('BN04', 'Phạm Thị D', 'PK0004', 'Nữ', '1975-12-05', 'Bác sĩ', 'Đã kết hôn', 'Hải Phòng', '0333444555', '333444555', 'Chảy máu mũi', 'Chảy máu mũi thường xuyên', 'không'),
+('BN05', 'Ngô Văn E', 'PK0005', 'Nam', '1980-03-25', 'Kỹ sư', 'Độc thân', 'Cần Thơ', '0444555666', '444555666', 'Đau lưng', 'Đau lưng sau khi ngồi lâu', 'không');
+
 
 
 CREATE TABLE `thuoc` (
