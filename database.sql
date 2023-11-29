@@ -122,47 +122,36 @@ INSERT INTO `thuoc` (`maThuoc`, `tenThuoc`, `soLuong`, `donGia`) VALUES
 ('QR1', 'quaradon', 12, 8000);
 
 
---
 
---
 ALTER TABLE `benhnhan`
   ADD PRIMARY KEY (`maBenhNhan`);
 
---
 
---
 ALTER TABLE `donthuoc`
   ADD PRIMARY KEY (`maDonThuoc`),
   ADD KEY `fk2` (`maBenhNhan`),
   ADD KEY `fk3` (`maDuocSi`),
   ADD KEY `fk4` (`maBacSi`);
 
---
 
---
 ALTER TABLE `nhanvien`
   ADD PRIMARY KEY (`maNhanVien`);
 
---
---
+
 ALTER TABLE `phieukhamchitiet`
   ADD PRIMARY KEY (`maPhieuKham`),
   ADD KEY `fk1` (`maBenhNhan`),
   ADD KEY `fk2` (`maNhanVien`),
   ADD KEY `fk3` (`maPhieuKham`);
 
---
 
---
 ALTER TABLE `thuoc`
   ADD PRIMARY KEY (`tenThuoc`);
 
---
 
---
 ALTER TABLE `donthuoc`
   MODIFY `maDonThuoc` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
---
+
 
 COMMIT;
